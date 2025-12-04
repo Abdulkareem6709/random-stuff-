@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random Stuff</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #2E86C1;
+    }
+    button {
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #response {
+      margin-top: 40px;
+      font-size: 20px;
+      color: #333;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+      white-space: pre-line; /* preserves line breaks */
+    }
+  </style>
+</head>
+<body>
+  <h1>Random Stuff</h1>
+
+  <button onclick="showMessage('Get a life and a job 😏')">Tell Me a Joke</button>
+  <button onclick="showAnotherJoke()">Another Joke</button>
+  <button onclick="showMessage('You have a family. Cherish them and spend time with them instead! 😊')">How to Make Friends</button>
+  <button onclick="showGiftAdvice()">How to Get a Gift from Parents</button>
+
+  <p id="response"></p>
+
+  <script>
+    function showMessage(message) {
+      document.getElementById('response').innerText = message;
+    }
+
+    function showAnotherJoke() {
+      document.getElementById('response').innerText = "Wdym, another joke? 😂";
+    }
+
+    function showGiftAdvice() {
+      document.getElementById('response').innerText =
+        "Step 1: Show them kindness and respect in every interaction. Be thoughtful about what they need and always try to do things that make them happy, even in small ways, like helping out around the house or listening to what they have to say.\n\n" +
+        "Step 2: Don’t be rude or careless, because parents often notice even when it seems like they’re not watching. Your consistent good behavior shows maturity and consideration, which makes them more willing to consider your requests.\n\n" +
+        "Step 3: Approach them in a good mood. Calmly and politely explain why you would like the gift, why it’s important to you, and how it could benefit you. Make sure to express gratitude for anything they have already done.\n\nThink about it.";
+    }
+  </script>
+</body>
+</html>
